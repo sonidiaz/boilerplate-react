@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body{
+    font-family: 'Poppins';
+    background-color: #eef1f5!important;
+}
+
+.zap-qm-wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 573px;
+    background: white;
+    border-radius: 20px;
+    padding: 45px;
+    box-sizing: border-box;
+}
+.zap-qm-textarea{
+    position: relative;
+    textarea{
+        width: 99%;
+        padding: 0;
+        height: 320px;
+        border: 1px solid #CBD1D4;
+        border-radius: 8px;
+        padding: 26px;
+        margin: 21px 0 26px;
+        box-sizing: border-box;
+        color: #2F4655;
+        font-family: 'Poppins';
+        font-size: 14px;
+        line-height: 22px;
+    }
+    &:after{
+        content: '';
+        display: none;
+        position: absolute;
+        bottom: 34px;
+        left: 2px;
+        width: 98%;
+        height: 67px;
+        background: #ffffffab;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        box-shadow: 0px -20px 9px 7px #ffffffab;
+    }
+}
+
+.zapButton{
+    position: relative;
+    color: #fff;
+    border: 0;
+    padding: 12px!important;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    &:hover{
+        opacity: .8;
+    }
+    &.block{
+        width: 100%;
+    }
+    &.noactive{
+        cursor: auto;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+.zap-container-form{
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 45px;
+    box-sizing: border-box;
+    height: 100%;
+    background: #ffffffd9;
+    border-radius: 22px;
+    z-index: 222;
+    input{
+        width: 74%;
+        height: 40px;
+        margin: 10px 0 20px 0;
+        padding: 0 10px;
+        background-color: #f1f0f0;
+        &:focus {
+            outline: 0 solid #f1f0f0;
+        }
+    }
+}
+.container-wrapper{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 27px 27px 36px;
+    background: #f3f3f3;
+}
+.send-mail{
+    width: 76%;
+    background-color: #08a0fe;
+    display: block;
+    margin: 0 auto;
+    cursor: normal;
+}
+
+.zap-text-response{
+    width: 99%;
+    padding: 0;
+    height: 320px;
+    border: 1px solid #CBD1D4;
+    border-radius: 8px;
+    padding: 26px;
+    margin: 21px 0 26px;
+    box-sizing: border-box;
+    color: #2F4655;
+    background-color: #cbd1d41c;
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 22px;
+    overflow-y: scroll;
+    // -webkit-touch-callout: none; 
+    // -webkit-user-select: none; 
+    //  -khtml-user-select: none;
+    //    -moz-user-select: none; 
+    //     -ms-user-select: none; 
+    //         user-select: none; 
+    &.copy{
+        -webkit-touch-callout: all; 
+        -webkit-user-select: all; 
+         -khtml-user-select: all;
+           -moz-user-select: all; 
+            -ms-user-select: all; 
+                user-select: all; 
+
+    }
+    span{
+        font-family: 'Poppins';
+        font-size: 14px;
+        display: block;
+    }
+    .question{
+        font-weight: 600;
+        margin-bottom: 7px;
+    }
+    .response{
+        font-weight: 400;
+        margin-bottom: 23px;
+
+    }
+}
+
+.zap-qm-title {
+    display: flex;
+    align-items: center;
+    i{
+        display: block;
+        width: 14px;
+        height: 14px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 10px;
+    }
+    .zap-count-qnas{
+        span{
+            margin-right: 5px;
+        }
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+.title-send-mail{
+    padding: 15px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+.zap-close-mail {
+    position: absolute;
+    top: -12px;
+    right: -11px;
+    cursor: pointer;
+    border-radius: 21px;
+    border: 4px solid white;
+    font-size: 15px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    &:hover{
+        opacity: .8;
+    }
+}
+.zap-icon-rotation {
+    position: relative;
+    display: inline-block;
+    width: 19px;
+    vertical-align: bottom;
+    height: 15px;
+    margin-left: 9px;
+    transform-origin: center center;
+    background-size: cover;
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
